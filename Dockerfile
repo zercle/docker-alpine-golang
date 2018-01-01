@@ -10,8 +10,8 @@ ENV	LC_ALL en_US.UTF-8
 ENV	TZ $timezone
 
 # Add config repositories
-RUN	echo 'http://dl-cdn.alpinelinux.org/alpine/3.6/main' > /etc/apk/repositories \
-	&& echo 'http://dl-cdn.alpinelinux.org/alpine/3.6/community' >> /etc/apk/repositories \
+RUN	echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' > /etc/apk/repositories \
+	&& echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/community' >> /etc/apk/repositories \
 	&& echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories \
 	&& echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
 	&& mkdir /run/openrc \
